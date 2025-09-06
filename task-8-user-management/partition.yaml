@@ -1,0 +1,16 @@
+- hosts: all
+  tasks:
+    - name: Create a new partition
+      command: "parted /dev/sdb mkpart primary ext4 1GB 10GB"
+
+    - name: Format the partition
+      filesystem:
+        fstype: ext4
+        dev: /dev/sdb1
+
+    - name: Mount the partition
+      mount:
+        path: /mnt/data
+        src: /dev/sdb1
+        fstype: ext4
+        state: mounted
