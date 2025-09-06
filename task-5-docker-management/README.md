@@ -20,4 +20,4 @@ With this, teams can **automate container operations**, making container managem
 ---
 
 ## 📖 Blog Post
-👉 [Managing Docker Containers with Ansible](https://www.linkedin.com/posts/aman-kant-mahto_automating-aws-ec2-instance-launch-with-ansible-activity-7257624952093220864-9F7t)
+👉 [Managing Docker Containers with Ansible](https://www.linkedin.com/posts/aman-kant-mahto_automating-aws-ec2-instance-launch-with-ansible-activity-7257624952093220864-9F7t/)
