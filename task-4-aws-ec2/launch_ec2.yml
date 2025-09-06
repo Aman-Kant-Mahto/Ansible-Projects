@@ -1,0 +1,28 @@
+---
+- name: Launch EC2 Instance with Ansible
+  hosts: localhost
+  gather_facts: False
+  vars:
+    instance_type: t2.micro
+    key_name: your_key_pair
+    region: us-east-1
+    image_id: ami-0c55b159cbfafe1f0  # Replace this with the correct AMI ID for your region
+    security_group: your_security_group
+
+  tasks:
+    - name: Launch a new EC2 instance
+      amazon.aws.ec2_instance:
+        key_name: "{{ key_name }}"
+        instance_type: "{{ instance_type }}"
+        image_id: "{{ image_id }}"
+        wait: yes
+        region: "{{ region }}"
+        vpc_subnet_id: subnet-12345678  # Replace with your subnet ID
+        group: "{{ security_group }}"
+        count: 1
+        assign_public_ip: yes
+      register: ec2
+
+    - name: Display the instance information
+      debug:
+        msg: "EC2 instance {{ ec2.instances[0].id }} launched successfully in region {{ region }}"
