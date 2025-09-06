@@ -41,12 +41,7 @@ This repository contains my **Ansible learning journey**, including automation t
 
 ---
 
-### 8️⃣ Network, Cloud & Big Data Automation with Ansible  
-📖 Blog: [Cisco, Palo Alto, Azure, Dynatrace & Big Data Automation](https://www.linkedin.com/posts/aman-kant-mahto_exploring-cisco-palo-alto-azure-dynatrace-activity-7257647575112007680-fJ7i)
-
----
-
-### 9️⃣ System Automation with Ansible  
+### 8️⃣  System Automation with Ansible  
 📖 Blog: [Automating User, Permissions, YUM, Server Tasks](https://www.linkedin.com/posts/aman-kant-mahto_automating-user-management-permissions-activity-7257655086800093185-RABP)
 
 ---
