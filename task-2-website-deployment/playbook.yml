@@ -1,0 +1,13 @@
+
+---
+- name: Fetch and run playbook from GitHub
+  hosts: localhost
+  gather_facts: false
+  tasks:
+    - name: Clone Ansible playbook repository from GitHub
+      git:
+        repo: https://github.com/aman-kant-mahto/aman.git
+        dest: /home/ec2-user/amanjit
+
+    - name: Run the fetched playbook
+      command: ansible-playbook /home/ec2-user/amanjit/main.yml
